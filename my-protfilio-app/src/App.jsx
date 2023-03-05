@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-
+import { styles } from "./styles";
 export default function App() {
   return (
     <div>
@@ -11,11 +11,9 @@ export default function App() {
 
 function SplitScreen(props) {
   return (
-    <motion.div
+    <motion.dev
       style={{
-        display: "flex",
-        backgroundColor: "#ccc",
-        height: "calc(100vh - 60px)",
+        ...styles.container,
         flexDirection: props.direction,
       }}
       initial={{ opacity: 0 }}
@@ -23,9 +21,7 @@ function SplitScreen(props) {
     >
       <motion.div
         style={{
-          flex: 1,
-          backgroundColor: "#fdd",
-          height: "100%",
+          ...styles.leftPane,
           x: props.direction === "row" ? -200 : 0, // Move left pane left if direction is row
           y: props.direction === "column" ? -200 : 0, // Move left pane up if direction is column
           opacity: 0, // Start with 0 opacity
@@ -41,8 +37,7 @@ function SplitScreen(props) {
       </motion.div>
       <motion.div
         style={{
-          flex: 1,
-          height: "100%",
+          ...styles.rightPane,
           x: props.direction === "row" ? 200 : 0, // Move right pane right if direction is row
           y: props.direction === "column" ? 200 : 0, // Move right pane down if direction is column
           opacity: 0, // Start with 0 opacity
@@ -56,7 +51,7 @@ function SplitScreen(props) {
       >
         {props.right}
       </motion.div>
-    </motion.div>
+    </motion.dev>
   );
 }
 
@@ -83,7 +78,7 @@ export function SplitScreenOverride() {
           direction="column"
           left={
             <motion.div
-              style={{ marginBottom: "20px", opacity: 0, y: -20 }}
+              style={{ marginBottom: "20px", ...styles.leftPane}}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
@@ -92,7 +87,7 @@ export function SplitScreenOverride() {
           }
           right={
             <motion.div
-              style={{ opacity: 0 }}
+              style={{ opacity: 0 ,  ...styles.rightPane,}}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
@@ -105,7 +100,7 @@ export function SplitScreenOverride() {
           direction="row"
           left={
             <motion.div
-              style={{ marginRight: "20px", opacity: 0, x: -20 }}
+              style={{ marginRight: "20px", ...styles.leftPane, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.3, delay: 0.5 }}
             >
