@@ -1,7 +1,7 @@
 
 import * as React from "react";
 import { motion } from "framer-motion";
-import { styles } from "./styles";
+import { styles } from "./SplitScreenOverride.styles";
 import SplitScreen from "./SplitScreen";
 import { ErrorBoundary } from "./ErrorBoundary";
 
@@ -32,7 +32,7 @@ export function SplitScreenOverride() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-                Left Column
+                Left 
               </motion.div>
             }
             right={
@@ -41,7 +41,7 @@ export function SplitScreenOverride() {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
               >
-                Right Column
+                Right 
               </motion.div>
             }
           />
@@ -54,7 +54,7 @@ export function SplitScreenOverride() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, delay: 0.5 }}
               >
-                Left Column
+             Column
               </motion.div>
             }
   
@@ -63,7 +63,7 @@ export function SplitScreenOverride() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.1, delay: 0.5 }}
             >
-             right Column
+       Column
             </motion.div>}
           />
         )}

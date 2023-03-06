@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { styles } from "./styles";
+import { styles } from "./SplitScreenOverride.styles";
 export default function SplitScreen(props) {
     return (
       <motion.dev
@@ -22,7 +22,7 @@ export default function SplitScreen(props) {
             y: 0, // Move back to original position
             opacity: 1, // Fade in
           }}
-          transition={{ duration: 3 }}
+          transition={{ duration:0.8 }}
         >
           {props.left}
         </motion.div>
