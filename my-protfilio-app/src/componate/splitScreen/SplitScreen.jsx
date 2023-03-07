@@ -22,7 +22,7 @@ export default function SplitScreen(props) {
             y: 0, // Move back to original position
             opacity: 1, // Fade in
           }}
-          transition={{ duration:0.8 }}
+
         >
           {props.left}
         </motion.div>
@@ -38,7 +38,7 @@ export default function SplitScreen(props) {
             y: 0, // Move back to original position
             opacity: 1, // Fade in
           }}
-          transition={{ duration: 0.5 }}
+       
         >
           {props.right}
         </motion.div>
