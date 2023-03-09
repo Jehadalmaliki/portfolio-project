@@ -1,4 +1,4 @@
-import { SplitScreenOverride } from "../splitScreen/SplitScreenOverride";
+import { SplitScreenOverride } from "../SplitScreen/SplitScreenOverride";
 export const Home = () => {
     return (
         <div>
