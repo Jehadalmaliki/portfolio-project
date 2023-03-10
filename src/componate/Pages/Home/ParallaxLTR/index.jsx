@@ -81,6 +81,7 @@ const Reactspring = () => {
               filter: "grayscale(70%)",
             }}
           />
+          
           <ParallaxLayer className={styles.textOverlay} offset={2} speed={2}>
             <span className={styles.text}>Wazeef Job pROJECT</span>
           </ParallaxLayer>
