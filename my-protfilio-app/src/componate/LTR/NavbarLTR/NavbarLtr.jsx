@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { NavbarLtlstyles } from "./NavbarLtl.style";
-import JehadAliText from "../../RTL/3DText";
+import JehadAliText from "../../Pages/Home/Logo";
 export function NavbarLft() {
   const [hovered, setHovered] = useState(null);
 
