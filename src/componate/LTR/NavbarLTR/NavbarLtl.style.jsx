@@ -8,7 +8,8 @@ export const NavbarLtlstyles = {
       position: "fixed", 
       top: 0,
       left:0,
-      right:0,   
+      right:0, 
+    
     },
     ul: {
       display: "flex",

@@ -6,16 +6,18 @@ export const Navbarstyles = {
       textTransform: "uppercase", 
       width: "100%",
       height: "2px",
+      borderTop: "2px solid #43ee61",
     },
     ul: {
       display: "flex",
       listStyle: "none", 
-          
+   
     },
     li: {
       margin: "0rem 3rem",
       position: "relative",
-      transition: "border-color 0.2s ease-in-out",   
+      transition: "border-color 0.2s ease-in-out", 
+     
     },
     liHover: {
       borderBottom: "1px solid transparent",
