@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { NavbarLtlstyles } from "./NavbarLtl.style";
+import JehadAliText from "../../RTL/3DText";
 export function NavbarLft() {
   const [hovered, setHovered] = useState(null);
 
@@ -26,10 +27,10 @@ export function NavbarLft() {
         >
           <Link
             to="/"
-            style={hovered === 0 ? NavbarLtlstyles.aHover : NavbarLtlstyles.a}
+           
           >
             <motion.span
-            >  J | A</motion.span>
+            > <JehadAliText/></motion.span>
           </Link>
         </motion.li>
         </motion.ul> 
