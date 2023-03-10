@@ -3,7 +3,9 @@ export const Navbarstyles = {
       display: "flex",    
       justifyContent: "space-between",
       height: "8vh",
- 
+      textTransform: "uppercase", 
+      width: "100%",
+      height: "2px",
     },
     ul: {
       display: "flex",
@@ -26,8 +28,8 @@ export const Navbarstyles = {
       position: "relative",
       textDecoration: "none",
       padding: "5px",
-      fontSize: "18px",
-      fontFamily: "sans-serif",
+      fontSize: "20px",
+      // fontFamily: "sans-serif",
       color: "#43ee61",
       textTransform: "uppercase",
      
