@@ -31,7 +31,7 @@ export function Navbar() {
             to="/works"
             style={hovered === 1 ? Navbarstyles.aHover : Navbarstyles.a}
           >
-   works
+   Works
             <span
               style={
                 hovered === 1 ? Navbarstyles.aHoverBefore : Navbarstyles.aBefore
