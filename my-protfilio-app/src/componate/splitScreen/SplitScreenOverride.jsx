@@ -14,7 +14,7 @@ import FerrisWheel from "../RTL/FerrisWheel";
 
 import Title from "../RTL/Title";
 import HText from "../RTL/HText";
-import Content from "../RTL/ Content/ Content";
+import Content from "../RTL/Content/ Content";
 import HelloButton from "../RTL/HelloButton";
 
 export function SplitScreenOverride() {
