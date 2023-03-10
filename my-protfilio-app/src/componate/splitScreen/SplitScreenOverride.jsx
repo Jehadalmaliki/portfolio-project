@@ -6,9 +6,16 @@ import { ErrorBoundary } from "./ErrorBoundary";
 import { Navbar } from "../RTL/NavbarRTL/NavbarRtl";
 import { NavbarLft } from "../LTR/NavbarLTR/NavbarLtr";
 import { useState } from "react";
-// import ParallaxBackground from "./ParallaxBackground";
-// import Parall from "./Parall";
 import Reactspring from "../LTR/ParallaxLTR/Reactspring";
+
+import FerrisWheel from "../RTL/FerrisWheel";
+// import JehadAliText from "../RTL/3DText";
+// import Cube from "../RTL/3DText/Cube";
+
+import Title from "../RTL/Title";
+import HText from "../RTL/HText";
+import Content from "../RTL/ Content/ Content";
+import HelloButton from "../RTL/HelloButton";
 
 export function SplitScreenOverride() {
   const [isSmallScreen, setIsSmallScreen] = React.useState(false);
@@ -48,6 +55,7 @@ export function SplitScreenOverride() {
               animate={{ opacity: 1 }}
             >
               <Navbar />
+             
             </motion.div>
           }
         />
@@ -57,9 +65,10 @@ export function SplitScreenOverride() {
           left={
             <motion.div
               style={{ ...styles.leftPane }}    
-              initial={{  x: 20 }}  
+              
+              initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 1, delay: 1 }}
             >
          
           <Reactspring/>
@@ -69,17 +78,19 @@ export function SplitScreenOverride() {
           right={
             <motion.div
               style={{ marginRight: "10px", opacity: 0 }}
-              initial={{  x: -12 }}  
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
+              initial={{  x: -40 }}  
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
             >
-           
+             
+    
               <Navbar />
-              <div style={{ color:"#43ee61" ,display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh' }}>
-      <div className={styles.title}>
-        <span style={{ fontSize: 60, textTransform: 'capitalize' }}>Jehad Ali</span>
-      </div>
-      </div>
+        <Title/>
+          
+              <HText/>
+              <Content/>
+              <HelloButton/>
+              <FerrisWheel/>
             </motion.div>
           }
         />
