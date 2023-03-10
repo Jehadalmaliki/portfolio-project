@@ -1,0 +1,20 @@
+.tech-icon{
+    height: 50px;
+    pointer-events: none;
+    rotate: -90deg;
+  
+  }
+  
+  .ferris-wheel-techs{
+    right:50%;
+    top: 80%;
+    height: 50%;
+    position: fixed;
+    overflow: hidden;
+  
+  }
+  
+  .image-parent{
+    /* padding: 70% 0%; */
+    
+  }
