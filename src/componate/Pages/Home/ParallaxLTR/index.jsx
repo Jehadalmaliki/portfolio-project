@@ -45,6 +45,9 @@ const Reactspring = () => {
               width: "100vw",
               height: "307vh",
               filter: "grayscale(80%)",
+              "@media only screen and (min-width: 1025px)":  {
+                width: "50vw",
+                height: "307vh",}
             }}
             
           />
@@ -64,6 +67,7 @@ const Reactspring = () => {
               height: "322vh",
               filter: "grayscale(70%)",
             }}
+            
           />
           <ParallaxLayer className={styles.textOverlay} offset={1} speed={1}>
             <span className={styles.text}>Babor Auction Project </span>
@@ -79,9 +83,12 @@ const Reactspring = () => {
               width: "70vw",
               height: "290vh",
               filter: "grayscale(70%)",
+            
+                
             }}
+            className={styles.img5}
           />
-          
+
           <ParallaxLayer className={styles.textOverlay} offset={2} speed={2}>
             <span className={styles.text}>Wazeef Job pROJECT</span>
           </ParallaxLayer>
