@@ -36,12 +36,12 @@ export function SplitScreenOverride() {
           left={
             <motion.div
               style={{ ...styles.leftPane }}
-              initial={{ opacity: 0.7}}
-            
+              initial={{ opacity: 0.7 }}
               animate={{ opacity: 1, x: 0 }}
-              
-            > 
-                <NavbarLft />       
+            >
+              {" "}
+              <Reactspring />
+              <NavbarLft />
             </motion.div>
           }
           right={
@@ -50,7 +50,11 @@ export function SplitScreenOverride() {
               animate={{ opacity: 1 }}
             >
               <Navbar />
-             
+              <Title />
+              <HText />
+              <Content />
+              <HelloButton />
+              <FerrisWheel />
             </motion.div>
           }
         />
@@ -59,33 +63,28 @@ export function SplitScreenOverride() {
           direction="row"
           left={
             <motion.div
-              style={{ ...styles.leftPane }}    
-              
+              style={{ ...styles.leftPane }}
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 1 }}
             >
-         
-          <Reactspring/>
-                <NavbarLft />
+              <Reactspring />
+              <NavbarLft />
             </motion.div>
           }
           right={
             <motion.div
               style={{ marginRight: "10px", opacity: 0 }}
-              initial={{  x: -40 }}  
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
+              initial={{ x: -40 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1 }}
             >
-             
-    
               <Navbar />
-        <Title/>
-          
-              <HText/>
-              <Content/>
-              <HelloButton/>
-              <FerrisWheel/>
+              <Title />
+              <HText />
+              <Content />
+              <HelloButton />
+              <FerrisWheel />
             </motion.div>
           }
         />
