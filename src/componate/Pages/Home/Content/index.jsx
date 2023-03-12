@@ -3,8 +3,8 @@ import './AnimatedSentence.css';
 import { motion } from "framer-motion";
 
 function  Content() {
-    const sentence = "<p>I'm a Full-Stack Web based in , Taiz Yemen.</p>".split('');
-
+    const sentence = "<p>I'm a Full-Stack Web based in , Taiz , Yemen.</p>".split('');
+ 
     return (
       <div className="sentence-container">
         {sentence.map((letter, index) => (
@@ -13,8 +13,7 @@ function  Content() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.05 }}
-            whileHover={{ scale: 1.2 }}
-            
+            whileHover={{ scale: 1.2 }}           
           >
             {letter}
           </motion.span>
