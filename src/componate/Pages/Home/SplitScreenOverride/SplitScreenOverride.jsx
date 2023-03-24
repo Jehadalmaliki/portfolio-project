@@ -40,8 +40,8 @@ export function SplitScreenOverride() {
               animate={{ opacity: 1, x: 0 }}
             >
               {" "}
-              <Reactspring />
-              <NavbarLft />
+            
+            
             </motion.div>
           }
           right={
@@ -49,12 +49,8 @@ export function SplitScreenOverride() {
               style={{ opacity: 0, ...styles.rightPane }}
               animate={{ opacity: 1 }}
             >
-              <Navbar />
-              <Title />
-              <HText />
-              <Content />
-              <HelloButton />
-              <FerrisWheel />
+               <Reactspring />
+              <NavbarLft />
             </motion.div>
           }
         />
