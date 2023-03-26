@@ -1,6 +1,9 @@
 
 .button_container {
- margin: 4rem 1rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+ /* margin: 4rem 1rem; */
 
 }
 
@@ -49,3 +52,16 @@
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
+
+@media (min-width: 500px) {
+  .button_container {
+  margin: 4rem auto;
+  max-width: 500px;
+  }
+  }
+  
+  @media (min-width: 800px) {
+  .button_container {
+  max-width: 800px;
+  }
+  }
