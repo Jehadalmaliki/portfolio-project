@@ -8,16 +8,32 @@
   align-items: center;
   height: auto; /* Change height to auto for responsiveness */
   font-family: 'Courier New', Courier, monospace;
-  margin: 0rem 3rem;
+ margin-inline: 3rem;
 }
 
 .sentence-container span {
   margin: 2px 3px;
 }
 
+@media screen and (min-width: 961px){
+  .sentence-container {
+    font-size: 18px;
+    margin: 0rem 1rem; /* Reduce margin for smaller screens */
+  }
+
+.sentence-container span {
+  margin: 2px 2px;
+}
+
+}
 @media (max-width: 768px) {
   .sentence-container {
     font-size: 18px;
     margin: 0rem 1rem; /* Reduce margin for smaller screens */
   }
+
+.sentence-container span {
+  margin: 2px 1px;
+}
+
 }
