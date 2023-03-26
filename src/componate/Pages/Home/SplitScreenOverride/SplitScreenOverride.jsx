@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion, useTransform } from "framer-motion";
-import { styles } from "../../../SplitScreen/SplitScreenOverride.styles";
+import './SplitScreenOverride.styles.css'
 import SplitScreen from "../../../SplitScreen/SplitScreen";
 import { ErrorBoundary } from "../../../SplitScreen/ErrorBoundary";
 import { Navbar } from "../../../RTL/NavbarRTL/NavbarRtl";
@@ -35,9 +35,10 @@ export function SplitScreenOverride() {
           direction="column"
           left={
             <motion.div
-              style={{ ...styles.leftPane ,background:'#031c07'}}
+              style={{ background:'#031c07'}}
               initial={{ opacity: 0.7 }}
               animate={{ opacity: 1, x: 0 }}
+              className= "leftPane"
             >
               {" "}
               <Navbar />
@@ -51,10 +52,11 @@ export function SplitScreenOverride() {
           }
           right={
             <motion.div
-              style={{ opacity: 0, ...styles.rightPane ,background:'#43ee61'}}
+              style={{ opacity: 0,background:'#43ee61'}}
               animate={{ opacity: 1 }}
+              className="rightPane"
             >
-               {/* <Reactspring /> */}
+               <Reactspring />
               <NavbarLft />
             </motion.div>
           }
@@ -64,10 +66,11 @@ export function SplitScreenOverride() {
           direction="row"
           left={
             <motion.div
-              style={{ ...styles.leftPane }}
+          
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 1 }}
+              className= "leftPane"
             >
               <Reactspring />
               <NavbarLft />

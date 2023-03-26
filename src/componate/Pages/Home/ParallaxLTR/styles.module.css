@@ -1,13 +1,15 @@
-.container {
-  height: 100vh;
+.container{
+  height:100vh;
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  
 }
 
 .page {
   height: 100vh;
   scroll-snap-align: start;
+
 }
 
 .parallaxLayer {
