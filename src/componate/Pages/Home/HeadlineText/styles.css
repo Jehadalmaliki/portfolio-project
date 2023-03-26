@@ -29,8 +29,7 @@
     display: flex;
     align-items: center;
   }
-  
-  @media (max-width: 768px) {
+  @media (max-width: 1069px) {
     .HText {
       flex-wrap: wrap;
       text-align: center;
@@ -43,5 +42,48 @@
     .TextSpan {
       font-size: 2rem;
     }
+    .TextSpan:first-child {
+        font-size: 3rem;
+        }
   }
-  
+  @media (max-width: 767px) {
+    .HText {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    
+    .TextSpan:first-child {
+      font-size: 4rem;
+    }
+    
+    .TextSpan {
+      font-size: 2rem;
+    }
+    .TextSpan:first-child {
+        font-size: 3rem;
+        }
+  }
+  @media (max-width: 480px) {
+    .HText {
+    flex-wrap: wrap;
+    text-align: center;
+    }
+    
+    .TextSpan:first-child {
+    font-size: 3rem;
+    }
+    
+    .TextSpan {
+    font-size: 1.5rem;
+    }
+    
+    .TextSpan:first-child {
+    font-size: 2.5rem;
+    }
+    }
+    
+    
+    
+    
+    
+    
