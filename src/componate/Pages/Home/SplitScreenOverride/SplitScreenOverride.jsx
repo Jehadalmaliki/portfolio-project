@@ -35,21 +35,26 @@ export function SplitScreenOverride() {
           direction="column"
           left={
             <motion.div
-              style={{ ...styles.leftPane }}
+              style={{ ...styles.leftPane ,background:'#031c07'}}
               initial={{ opacity: 0.7 }}
               animate={{ opacity: 1, x: 0 }}
             >
               {" "}
-            
+              <Navbar />
+              <Title />
+              <HText />
+              <Content />
+              <HelloButton />
+              <FerrisWheel />
             
             </motion.div>
           }
           right={
             <motion.div
-              style={{ opacity: 0, ...styles.rightPane }}
+              style={{ opacity: 0, ...styles.rightPane ,background:'#43ee61'}}
               animate={{ opacity: 1 }}
             >
-               <Reactspring />
+               {/* <Reactspring /> */}
               <NavbarLft />
             </motion.div>
           }
