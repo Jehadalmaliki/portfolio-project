@@ -17,7 +17,6 @@ const Page = ({ offset }) => (
     </ParallaxLayer>
   </>
 );
-
 const Reactspring = () => {
   const parallax = useRef(null);
 
@@ -28,77 +27,48 @@ const Reactspring = () => {
   };
 
   return (
-    <div style={{ height: "100vh" }}>
-      <div style={{ background: "#dfdfdf" }}>
-        <Parallax
-          className={styles.container}
-          ref={parallax}
-          pages={3}
-          vertical
+    <div className={styles.container}>
+      <div className={styles.page}>
+        <div
+          className={styles.parallaxLayer}
+          style={{
+            backgroundImage: `url(${img6})`,
+          }}
         >
-          <Page offset={0} />
-          <ParallaxLayer
-            offset={0}
-            speed={0.5}
-            style={{
-              backgroundImage: `url(${img6})`,
-              backgroundSize: "contain",
-              width: "49.5vw",
-              height: "500vh",
-       
-              "@media only screen and (min-width: 1025px)":  {
-                width: "50vw",
-       
-                }
-            }}
-            
-          />
-          <ParallaxLayer className={styles.textOverlay} offset={0.2} speed={1}>
+          <div className={styles.textOverlay}>
             <span className={styles.text}>Movie Project</span>
-          </ParallaxLayer>
-
-          <Page offset={1} />
-          <ParallaxLayer
-            offset={1}
-            speed={1}
-            style={{
-              backgroundImage: `url(${img4})`,
-          
-              backgroundSize: "contain",
-              width: "49.5vw",
-           height: "179vh",
-           filter: "grayscale(60%)",
-        
-            }}
-            
-          />
-          <ParallaxLayer className={styles.textOverlay} offset={1} speed={1}>
-            <span className={styles.text}>Babor Auction Project </span>
-          </ParallaxLayer>
-
-          <Page offset={2} />
-          <ParallaxLayer
-            offset={2}
-            speed={0.5}
-            style={{
-              backgroundImage: `url(${img2})`,
-              backgroundSize: "contain",
-              width: "50vw",
-              height: "177vh",
-              filter: "grayscale(30%)",
-            
-                
-            }}
-            className={styles.img5}
-          />
-
-          <ParallaxLayer className={styles.textOverlay} offset={2} speed={2}>
-            <span className={styles.text}>Wazeef Job pROJECT</span>
-          </ParallaxLayer>
-        </Parallax>
+          </div>
+        </div>
+      </div>
+      <div className={styles.page}>
+        <div
+          className={styles.parallaxLayer}
+          style={{
+            backgroundImage: `url(${img4})`,
+            filter: "grayscale(60%)",
+          }}
+        >
+          <div className={styles.textOverlay}>
+            <span className={styles.text}>Babor Auction Project</span>
+          </div>
+        </div>
+      </div>
+      <div className={styles.page}>
+        <div
+          className={styles.parallaxLayer}
+          style={{
+            backgroundImage: `url(${img2})`,
+            filter: "grayscale(30%)",
+          }}
+        >
+          <div className={styles.textOverlay}>
+            <span className={styles.text}>Wazeef Job Project</span>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default Reactspring;
+
