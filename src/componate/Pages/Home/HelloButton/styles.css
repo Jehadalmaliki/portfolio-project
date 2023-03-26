@@ -53,22 +53,25 @@ justify-content: center;
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
-@media (min-width: 500px) {
-  .button_container {
-  margin: 4rem auto;
-  max-width: 500px;
-  }
+  @media screen and (min-width: 961px) {
+  
   }
   
-  @media (min-width: 800px) {
-  .button_container {
-  max-width: 800px;
+  @media screen and (max-width: 960px) {
+    .button_container {
+      max-width: 800px;
+      }
   }
-  }
-  @media (max-width: 480px) {
-    .btn {
-      font-size: 12px;
-      padding: 12px 8px;
-      margin: 1rem;
-    }
+  
+  @media screen and (max-width: 768px) {
+    .button_container {
+      margin: 1rem auto;
+      max-width: 500px;
+      }
+      .btn {
+        font-size: 12px;
+        padding: 12px 8px;
+        margin: 1rem;
+      }
+  
   }
