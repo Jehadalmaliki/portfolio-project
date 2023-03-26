@@ -8,6 +8,7 @@ import img2 from "../../../../assets/images/madLab.png";
 import img3 from "../../../../assets/images/img3.jpeg";
 import img4 from "../../../../assets/images/more.png";
 import img5 from "../../../../assets/images/job.png";
+import img6 from "../../../../assets/images/des.png"
 
 const Page = ({ offset }) => (
   <>
@@ -40,14 +41,15 @@ const Reactspring = () => {
             offset={0}
             speed={0.5}
             style={{
-              backgroundImage: `url(${img4})`,
+              backgroundImage: `url(${img6})`,
               backgroundSize: "contain",
-              width: "100vw",
-              height: "307vh",
-              filter: "grayscale(80%)",
+              width: "49.5vw",
+              height: "500vh",
+       
               "@media only screen and (min-width: 1025px)":  {
                 width: "50vw",
-                height: "307vh",}
+       
+                }
             }}
             
           />
@@ -60,12 +62,13 @@ const Reactspring = () => {
             offset={1}
             speed={1}
             style={{
-              backgroundImage: `url(${img1})`,
-              backgroundSize: "cover",
+              backgroundImage: `url(${img4})`,
+          
               backgroundSize: "contain",
-              width: "70vw",
-              height: "322vh",
-              filter: "grayscale(70%)",
+              width: "49.5vw",
+           height: "179vh",
+           filter: "grayscale(60%)",
+        
             }}
             
           />
@@ -78,11 +81,11 @@ const Reactspring = () => {
             offset={2}
             speed={0.5}
             style={{
-              backgroundImage: `url(${img5})`,
+              backgroundImage: `url(${img2})`,
               backgroundSize: "contain",
-              width: "70vw",
-              height: "290vh",
-              filter: "grayscale(70%)",
+              width: "50vw",
+              height: "177vh",
+              filter: "grayscale(30%)",
             
                 
             }}
