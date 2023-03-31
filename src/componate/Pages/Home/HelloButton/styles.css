@@ -65,8 +65,9 @@ justify-content: center;
   
   @media screen and (max-width: 768px) {
     .button_container {
-      margin: 1rem auto;
+      margin: 0rem auto;
       max-width: 500px;
+      border-bottom: 2px solid #bcf1b5;
       }
       .btn {
         font-size: 12px;
