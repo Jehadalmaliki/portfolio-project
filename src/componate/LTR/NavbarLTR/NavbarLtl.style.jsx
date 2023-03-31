@@ -1,7 +1,7 @@
 export const NavbarLtlstyles = {
     nav: {
       display: "flex", 
-      height: "8vh",
+      height: "10vh",
       padding: "0 ",
       borderBottom: "2px solid #43ee61",
       margin:" 0 0.5rem",
