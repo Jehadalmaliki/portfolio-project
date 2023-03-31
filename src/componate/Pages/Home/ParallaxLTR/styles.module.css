@@ -1,77 +1,52 @@
-.container{
-  height:100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-  
-}
-
-.page {
-  height: 100vh;
-  scroll-snap-align: start;
-
-}
-
-.parallaxLayer {
-  height: 150vh;
-  width: 50vw;
-  max-width: 800px;
-  margin: 0 auto;
-  background-position: center;
-  background-size: contain;
+.container > div > div {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
+  justify-content: center;
+  overflow: visible;
+  flex-wrap: nowrap;
 
+}
 .textOverlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: start !important;
+  align-items: flex-end !important;
+  line-height: 0px;
+  z-index: 2;
 }
 
 .text {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-
-@media screen and (min-width: 961px) {
-  .parallaxLayer {
-    width:50vw;
-  
-  }
-}
-
-@media screen and (max-width: 961px) {
-  .textOverlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-  }
-  
-  .text {
-    font-size: 1rem;
-    font-weight: bold;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .parallaxLayer {
-    width:auto;
-    height: 150vh;
-  }
+  color: rgb(70, 234, 37);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 15rem 3rem;
+  transform: 3;
+  opacity: 1;
+  transition: all 0.2s;
+  line-height: 0px;
+  text-transform: uppercase;
+  pointer-events: none;
+  letter-spacing: 0.2rem;
+  border: 1px solid rgb(70, 234, 37);
+} 
+.number span {
+  display: inline-block;
+  position: relative;
  
 }
-@media (max-width: 480px) {
-  .parallaxLayer {
-width:100vw;
-  
-  }
-  }
-  
-  
-  
-  
-  
-  
+
+.slopeBegin {
+  background-color: #1dc41a;
+  clip-path: polygon(20% 0, 70% 0, 50% 100%, 0% 100%); 
+}
+.slopeEnd {
+  clip-path: polygon(70% 0, 100% 0, 80% 100%, 50% 100%);
+}
+.slopeBegin,
+.slopeEnd {
+  padding:3px;
+  height: 100%
+}

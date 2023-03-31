@@ -11,6 +11,7 @@ import Title from "../Title";
 import HText from "../HeadlineText";
 import Content from "../Content";
 import HelloButton from "../HelloButton";
+import ReactspringB from "../ParallaxLTRB";
 
 export function SplitScreenOverride() {
   const [isSmallScreen, setIsSmallScreen] = React.useState(false);
@@ -45,9 +46,10 @@ export function SplitScreenOverride() {
               <Title />
               <HText />
               <Content />
+              {/* <FerrisWheel /> */}
               <HelloButton />
-              <FerrisWheel />
-            
+       
+  
             </motion.div>
           }
           right={
@@ -56,7 +58,8 @@ export function SplitScreenOverride() {
               animate={{ opacity: 1 }}
               className="rightPane"
             >
-               <Reactspring />
+               
+               <ReactspringB/>
               <NavbarLft />
             </motion.div>
           }
