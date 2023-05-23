@@ -1,0 +1,37 @@
+.icon-container {
+    position: fixed;
+    top: 75%;
+    right:0%;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(-50%);
+    
+  }
+  .icon-container a:hover {
+    background-color: #000;
+  }
+  
+  .icon-image {
+    display: block;
+    padding: 16px;
+    margin: 0rem 0.5rem;
+    transition: all 0.3s ease;
+    height: 1.8rem;
+    width:1.8rem;
+  }
+
+  @media (max-width: 1069px) {
+    .icon-image {
+
+        margin: 0rem 0.5rem;
+        transition: all 0.3s ease;
+        height: 1.4rem;
+        width:1.4rem;
+      }
+  }
+  
+    
+    
+    
+    
+    
