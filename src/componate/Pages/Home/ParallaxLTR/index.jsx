@@ -77,7 +77,7 @@ const Reactspring = () => {
           />
           <ParallaxLayer className={styles.textOverlay} offset={1.2} speed={1}>
             <span className={styles.text}>
-              <p>FiveStore project </p> |
+              <p>FiftyStore project </p> |
               <a href="https://fiftystore.vercel.app/" target="_blank" rel="noopener noreferrer">
                 Demo
               </a>
