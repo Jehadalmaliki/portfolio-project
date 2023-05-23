@@ -2,9 +2,9 @@ export const NavbarLtlstyles = {
     nav: {
       display: "flex", 
       height: "10vh",
-      padding: "0 ",
+      padding: "0",
       borderBottom: "2px solid #43ee61",
-      margin:" 0 0rem",
+      margin:"0",
       position: "fixed", 
       top: 0,
       left:0,

@@ -4,7 +4,7 @@
   justify-content: center;
   /* overflow: visible; */
   flex-wrap: nowrap;
-
+ 
 }
 .textOverlay {
   justify-content: start !important;
@@ -30,7 +30,7 @@
   margin: 1rem 0.5rem;
   color: rgb(20, 43, 23);
 }
-/* .number span {
+.number span {
   display: inline-block;
   position: relative;
  
@@ -47,4 +47,4 @@
 .slopeEnd {
   padding:3px;
   height: 100%
-} */
+}
