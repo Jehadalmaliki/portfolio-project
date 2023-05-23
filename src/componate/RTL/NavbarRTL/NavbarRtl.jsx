@@ -24,7 +24,7 @@ export function Navbar() {
           onMouseLeave={() => handleMouseLeave()}
         >
           <Link
-            to="/works"
+            to="#"
             className="a"
           >
    Works
@@ -38,11 +38,12 @@ export function Navbar() {
           onMouseLeave={() => handleMouseLeave()}
         >
           <Link
-            to="/about"
+            to="#"
             className="a"
           >
      About
           </Link>
+        
         </motion.li>
       </motion.ul>
       
