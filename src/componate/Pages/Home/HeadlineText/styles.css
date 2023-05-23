@@ -1,31 +1,89 @@
-.HText{
-    margin: 0rem 1rem;
+.HText {
+    margin: 0 1rem;
     padding: 0;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-
-}
-.TextSpan{
+  }
+  
+  .TextSpan {
     display: inline-block;
     font-size: 3rem;
-    color:#4fed16;
+    color: #4fed16;
     letter-spacing: 0.2rem;
     font-family: cursive;
-}
-.TextSpan:first-child {
+  }
+  
+  .TextSpan:first-child {
     font-size: 5rem;
     text-shadow: 1px 1px #000;
     color: rgb(56, 157, 69);
     font-family: cursive;
-}
-.TextSpan:hover::first-letter {
-    color: rgb(246, 245, 240);
-
   }
-
+  
+  .TextSpan:hover::first-letter {
+    color: rgb(246, 245, 240);
+  }
+  
   .title-line {
     display: flex;
     align-items: center;
   }
- 
+  @media (max-width: 1069px) {
+    .HText {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    
+    .TextSpan:first-child {
+      font-size: 4rem;
+    }
+    
+    .TextSpan {
+      font-size: 2rem;
+    }
+    .TextSpan:first-child {
+        font-size: 3rem;
+        }
+  }
+  @media (max-width: 767px) {
+    .HText {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    
+    .TextSpan:first-child {
+      font-size: 4rem;
+    }
+    
+    .TextSpan {
+      font-size: 2rem;
+    }
+    .TextSpan:first-child {
+        font-size: 3rem;
+        }
+  }
+  @media (max-width: 480px) {
+    .HText {
+    flex-wrap: wrap;
+    text-align: center;
+    }
+    
+    .TextSpan:first-child {
+    font-size: 3rem;
+    }
+    
+    .TextSpan {
+    font-size: 1.5rem;
+    }
+    
+    .TextSpan:first-child {
+    font-size: 2.5rem;
+    }
+    }
+    
+    
+    
+    
+    
+    

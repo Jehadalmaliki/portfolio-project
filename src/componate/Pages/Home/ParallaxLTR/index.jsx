@@ -1,13 +1,13 @@
 import React, { useRef } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import { animated } from "@react-spring/web";
-
 import styles from "./styles.module.css";
 import img1 from "../../../../assets/images/Babor.png";
 import img2 from "../../../../assets/images/madLab.png";
-import img3 from "../../../../assets/images/img3.jpeg";
 import img4 from "../../../../assets/images/more.png";
 import img5 from "../../../../assets/images/job.png";
+import img6 from "../../../../assets/images/des.png";
+import img7 from "../../../../assets/images/healing.png";
+import Contact from "../ContactMe";
 
 const Page = ({ offset }) => (
   <>
@@ -27,12 +27,13 @@ const Reactspring = () => {
   };
 
   return (
-    <div style={{ height: "100vh" }}>
+    <div>
       <div style={{ background: "#dfdfdf" }}>
+        
         <Parallax
           className={styles.container}
           ref={parallax}
-          pages={3}
+          pages={6}
           vertical
         >
           <Page offset={0} />
@@ -42,17 +43,24 @@ const Reactspring = () => {
             style={{
               backgroundImage: `url(${img4})`,
               backgroundSize: "contain",
-              width: "100vw",
-              height: "307vh",
-              filter: "grayscale(80%)",
-              "@media only screen and (min-width: 1025px)":  {
-                width: "50vw",
-                height: "307vh",}
+              width: "49.5vw",
+              height: "auto",
+              filter: "grayscale(50%)",
             }}
-            
           />
-          <ParallaxLayer className={styles.textOverlay} offset={0.2} speed={1}>
-            <span className={styles.text}>Movie Project</span>
+          <ParallaxLayer className={styles.textOverlay} offset={0.1} speed={1}>
+          <span className={styles.text}>
+              <p> Movie project </p> |
+              <a href="https://202212-giz-ye-few.github.io/more-than-one/" target="_blank" rel="noopener noreferrer">
+                Demo
+              </a>
+              |
+              <a href="https://github.com/202212-GIZ-YE-FEW/more-than-one" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+
+            </span>
+   
           </ParallaxLayer>
 
           <Page offset={1} />
@@ -60,37 +68,137 @@ const Reactspring = () => {
             offset={1}
             speed={1}
             style={{
-              backgroundImage: `url(${img1})`,
-              backgroundSize: "cover",
+              backgroundImage: `url(${img6})`,
               backgroundSize: "contain",
-              width: "70vw",
-              height: "322vh",
-              filter: "grayscale(70%)",
+              width: "49.5vw",
+              height: "auto",
+              filter: "grayscale(50%)",
             }}
-            
           />
-          <ParallaxLayer className={styles.textOverlay} offset={1} speed={1}>
-            <span className={styles.text}>Babor Auction Project </span>
+          <ParallaxLayer className={styles.textOverlay} offset={1.2} speed={1}>
+            <span className={styles.text}>
+              <p>FiveStore project </p> |
+              <a href="" target="_blank" rel="noopener noreferrer">
+                Demo
+              </a>
+              |
+              <a href="https://github.com/202212-GIZ-YE-FEW/react-ecommerce-fiftystore" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </span>
           </ParallaxLayer>
 
           <Page offset={2} />
           <ParallaxLayer
             offset={2}
-            speed={0.5}
+            speed={0.1}
             style={{
               backgroundImage: `url(${img5})`,
               backgroundSize: "contain",
-              width: "70vw",
-              height: "290vh",
-              filter: "grayscale(70%)",
-            
-                
+              width: "49.5vw",
+              height: "auto",
+              filter: "grayscale(20%)",
             }}
             className={styles.img5}
           />
 
-          <ParallaxLayer className={styles.textOverlay} offset={2} speed={2}>
-            <span className={styles.text}>Wazeef Job pROJECT</span>
+          <ParallaxLayer className={styles.textOverlay} offset={2.5} speed={1}>
+          <dev className={styles.text}>
+              <p>Wazeef project</p> |
+              <a
+                href="https://jehadalmaliki.github.io/Jobwebsite/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Demo
+              </a>
+              |
+              <a href="https://github.com/Jehadalmaliki/-Laravel-project-" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </dev>
+          </ParallaxLayer>
+
+          <Page offset={3} />
+          <ParallaxLayer
+            offset={3}
+            speed={0.5}
+            style={{
+              backgroundImage: `url(${img1})`,
+              backgroundSize: "contain",
+              width: "49.5vw",
+              height: "auto",
+              filter: "grayscale(40%)",
+            }}
+            className={styles.img5}
+          />
+
+          <ParallaxLayer className={styles.textOverlay} offset={3} speed={1}>
+            <span className={styles.text}>
+              <p> Babor project </p> |
+              <a href="https://github.com/Jehadalmaliki/Babor" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </span>
+          </ParallaxLayer>
+
+          <Page offset={4} />
+          <ParallaxLayer
+            offset={4}
+            speed={0.5}
+            style={{
+              backgroundImage: `url(${img7})`,
+              backgroundSize: "contain",
+              width: "49.5vw",
+              height: "auto",
+              filter: "grayscale(40%)",
+            }}
+            className={styles.img5}
+          />
+
+          <ParallaxLayer className={styles.textOverlay} offset={4.2} speed={1}>
+            <dev className={styles.text}>
+              <p>Therapist project</p> |
+              <a
+                href="https://therapistidev.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Demo
+              </a>
+              |
+              <a href="https://github.com/202212-GIZ-YE-FEW/iDev" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </dev>
+          </ParallaxLayer>
+
+          <Page offset={5} />
+          <ParallaxLayer
+            offset={5}
+            speed={0.5}
+            style={{
+              backgroundImage: `url(${img2})`,
+              backgroundSize: "contain",
+              width: "49.5vw",
+              height: "auto",
+              filter: "grayscale(50%)",
+            }}
+            className={styles.img5}
+          />
+
+          <ParallaxLayer className={styles.textOverlay} offset={5.2} speed={1}>
+           
+            <span className={styles.text}>
+              <p> MIdLab project </p> |
+              <a href="https://202212-giz-ye-few.github.io/mad-libs-tech-titans/" target="_blank" rel="noopener noreferrer">
+                Demo
+              </a>
+              |
+              <a href="https://github.com/202212-GIZ-YE-FEW/mad-libs-tech-titans" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </span>
           </ParallaxLayer>
         </Parallax>
       </div>
