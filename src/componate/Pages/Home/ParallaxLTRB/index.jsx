@@ -43,7 +43,7 @@ const ReactspringB = () => {
             style={{
               backgroundImage: `url(${img4})`,
               backgroundSize: "contain",
-              width: "97vw",
+              width: "100vw",
               height:"auto",
               filter: "grayscale(50%)",
              
@@ -71,7 +71,7 @@ const ReactspringB = () => {
             style={{
               backgroundImage: `url(${img6})`,
               backgroundSize: "contain",
-              width: "97vw",
+              width: "100vw",
               height:"auto",
               filter: "grayscale(50%)",
             }}
@@ -97,7 +97,7 @@ const ReactspringB = () => {
             style={{
               backgroundImage: `url(${img2})`,
               backgroundSize: "contain",
-              width: "97vw",
+              width: "100vw",
               height:"auto",
               filter: "grayscale(50%)",
             
@@ -126,7 +126,7 @@ const ReactspringB = () => {
             style={{
               backgroundImage: `url(${img1})`,
               backgroundSize: "contain",
-              width: "97vw",
+              width: "100vw",
               height:"auto",
               filter: "grayscale(50%)",
             
@@ -150,7 +150,7 @@ const ReactspringB = () => {
             style={{
               backgroundImage: `url(${img7})`,
               backgroundSize: "contain",
-              width: "97vw",
+              width: "100vw",
               height:"auto",
               filter: "grayscale(50%)",
             

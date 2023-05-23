@@ -4,7 +4,7 @@
   justify-content: center;
   /* overflow: visible; */
   flex-wrap: nowrap;
-
+ 
 }
 .textOverlay {
   justify-content: start !important;
