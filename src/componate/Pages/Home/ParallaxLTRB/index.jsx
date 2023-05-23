@@ -51,8 +51,15 @@ const ReactspringB = () => {
             
           />
           <ParallaxLayer className={styles.textOverlay} offset={0.2} speed={1}>
-          <span className={styles.text} >
-            Movie project |<p></p><a href="">Demo</a>|<a href="">GitHub</a>
+          <span className={styles.text}>
+              <p> Movie project </p> |
+              <a href="https://202212-giz-ye-few.github.io/more-than-one/" target="_blank" rel="noopener noreferrer">
+                Demo
+              </a>
+              |
+              <a href="https://github.com/202212-GIZ-YE-FEW/more-than-one" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
 
             </span>
           </ParallaxLayer>
@@ -71,9 +78,15 @@ const ReactspringB = () => {
             
           />
           <ParallaxLayer className={styles.textOverlay} offset={1} speed={1}>
-          <span className={styles.text} >
-            FiveStore project |<p></p><a href="">Demo</a>|<a href="">GitHub</a>
-
+          <span className={styles.text}>
+              <p>FiveStore project </p> |
+              <a href="https://fiftystore.vercel.app/" target="_blank" rel="noopener noreferrer">
+                Demo
+              </a>
+              |
+              <a href="https://github.com/202212-GIZ-YE-FEW/react-ecommerce-fiftystore" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
             </span>
           </ParallaxLayer>
 
@@ -94,9 +107,15 @@ const ReactspringB = () => {
           />
 
           <ParallaxLayer className={styles.textOverlay} offset={2} speed={2}>
-          <span className={styles.text} >
-         MIdLab project |<p></p><a href="" >Demo</a>|<a href="">GitHub</a>
-
+          <span className={styles.text}>
+              <p> MIdLab project </p> |
+              <a href="https://202212-giz-ye-few.github.io/mad-libs-tech-titans/" target="_blank" rel="noopener noreferrer">
+                Demo
+              </a>
+              |
+              <a href="https://github.com/202212-GIZ-YE-FEW/mad-libs-tech-titans" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
             </span>
           </ParallaxLayer>
 
@@ -117,9 +136,11 @@ const ReactspringB = () => {
           />
 
           <ParallaxLayer className={styles.textOverlay} offset={3} speed={1}>
-          <span className={styles.text} >
-         Babor project |<p></p><a href="" >GitHub</a>
-
+          <span className={styles.text}>
+              <p> Babor project </p> |
+              <a href="https://github.com/Jehadalmaliki/Babor" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
             </span>
           </ParallaxLayer>
           <Page offset={4} />
@@ -139,10 +160,20 @@ const ReactspringB = () => {
           />
 
           <ParallaxLayer className={styles.textOverlay} offset={4} speed={1}>
-          <span className={styles.text} >
-       Therapist project |<p></p><a href="https://therapistidev.netlify.app/" >Demo</a>|<a href="">GitHub</a>
-
-            </span>
+          <dev className={styles.text}>
+              <p>Therapist project</p> |
+              <a
+                href="https://therapistidev.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Demo
+              </a>
+              |
+              <a href="https://github.com/202212-GIZ-YE-FEW/iDev" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </dev>
           </ParallaxLayer>
 
         
