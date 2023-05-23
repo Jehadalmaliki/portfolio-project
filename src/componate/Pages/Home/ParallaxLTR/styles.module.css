@@ -2,36 +2,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: visible;
+  /* overflow: visible; */
   flex-wrap: nowrap;
 
 }
 .textOverlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
   justify-content: start !important;
   align-items: flex-end !important;
-  line-height: 0px;
-  z-index: 2;
 }
 
 .text {
   color: rgb(70, 234, 37);
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 15rem 3rem;
   transform: 3;
   opacity: 1;
   transition: all 0.2s;
   line-height: 0px;
   text-transform: uppercase;
-  pointer-events: none;
   letter-spacing: 0.2rem;
-  border: 1px solid rgb(70, 234, 37);
+  
 } 
+
+.text a{
+
+  margin: 1rem 0.5rem;
+  color: rgb(20, 43, 23);
+}
 .number span {
   display: inline-block;
   position: relative;
