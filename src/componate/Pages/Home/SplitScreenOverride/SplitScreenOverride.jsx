@@ -14,6 +14,7 @@ import HelloButton from "../HelloButton";
 import ReactspringB from "../ParallaxLTRB";
 import Contact from "../ContactMe";
 import ContactTRL from "../ContactMeTRL";
+import SubTite from "../SubTitle";
 
 export function SplitScreenOverride() {
   const [isSmallScreen, setIsSmallScreen] = React.useState(false);
@@ -48,7 +49,9 @@ export function SplitScreenOverride() {
               <Title />
               <HText />
               <Content />
+      
               <ContactTRL/>
+              <SubTite/>
               <FerrisWheel />
   
         
@@ -93,7 +96,9 @@ export function SplitScreenOverride() {
               <Title />
               <HText />
               <Content />
+              <SubTite/>
               <Contact/>
+         
               <FerrisWheel />
             </motion.div>
           }
