@@ -1,3 +1,4 @@
+
 .title {
   display: flex;
   flex-direction: column;
@@ -7,9 +8,9 @@
   letter-spacing: 0.3rem;
   color: #4fed16;
   font-size: 1.5rem;
-  text-transform: uppercase;
+  text-transform: uppercase !important;
   margin-top: 7rem ;
-
+  font-family: "Times New Roman" !important;
 
 }
 
