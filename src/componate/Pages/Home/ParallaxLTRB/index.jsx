@@ -2,13 +2,13 @@ import React, { useRef } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
-import img1 from "../../../../assets/images/Babor.webp";
-import img2 from "../../../../assets/images/madlab.svg";
-import img4 from "../../../../assets/images/more.webp";
-import img5 from "../../../../assets/images/job.svg";
-import img6 from "../../../../assets/images/des.svg";
-import img7 from "../../../../assets/images/healing.svg";
 
+import img1 from "../../../../assets/images/Babor.webp";
+import img2 from "../../../../assets/images/madlab.webp";
+import img4 from "../../../../assets/images/more.webp";
+import img5 from "../../../../assets/images/job.webp";
+import img6 from "../../../../assets/images/des.webp";
+import img7 from "../../../../assets/images/healing.webp";
 
 const Page = ({ offset }) => (
   <>

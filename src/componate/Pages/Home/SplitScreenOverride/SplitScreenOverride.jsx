@@ -15,6 +15,7 @@ import ReactspringB from "../ParallaxLTRB";
 import Contact from "../ContactMe";
 import ContactTRL from "../ContactMeTRL";
 import SubTite from "../SubTitle";
+import Cube from "../../../RTL/3DText/Cube";
 
 export function SplitScreenOverride() {
   const [isSmallScreen, setIsSmallScreen] = React.useState(false);
@@ -45,13 +46,13 @@ export function SplitScreenOverride() {
               className= "leftPane"
             >
               {" "}
-              <Navbar />
+              <Navbar />  
               <Title />
               <HText />
               <Content />
-      
+
               <ContactTRL/>
-              <SubTite/>
+        
               <FerrisWheel />
   
         
@@ -93,12 +94,17 @@ export function SplitScreenOverride() {
               transition={{ duration: 1 }}
             >
               <Navbar />
+      
               <Title />
+        
               <HText />
+      
               <Content />
+              
               <SubTite/>
+          
               <Contact/>
-         
+           
               <FerrisWheel />
             </motion.div>
           }

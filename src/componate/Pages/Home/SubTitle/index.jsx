@@ -1,5 +1,6 @@
 import React from 'react'
 import './styles.css';
+import Cube from '../../../RTL/3DText/Cube';
 function SubTite() {
   return (
     <div>
@@ -11,7 +12,7 @@ function SubTite() {
 
     <h2 className="rotatingText-adjective">beautiful</h2>
     <h2 className="rotatingText-adjective">maintainable</h2>
-    <h2 className="rotatingText-adjective">perfect 👌</h2>
+    <h2 className="rotatingText-adjective">perfect <Cube/></h2>
   </div>
 </div>
     </div>
