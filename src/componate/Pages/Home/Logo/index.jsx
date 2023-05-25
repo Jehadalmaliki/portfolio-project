@@ -7,7 +7,7 @@ const JehadAliText = () => {
     <motion.div
       whileHover={{ scale: 1.2, rotateX: 45, rotateY: 45 }}
       transition={{ duration: 0.5 }}
-      style={styles.container}
+      style={{...styles.container, fontFamily: 'cursive'}}
     >
       <motion.div style={styles.div}>
         <motion.div style={styles.innerDiv}>J</motion.div>
