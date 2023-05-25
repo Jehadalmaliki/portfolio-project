@@ -1,3 +1,4 @@
+
 .HText {
     margin: 0 1rem;
     padding: 0;
@@ -11,14 +12,16 @@
     font-size: 3rem;
     color: #4fed16;
     letter-spacing: 0.2rem;
-    font-family: cursive;
+    font-family: cursive !important;
+
   }
   
   .TextSpan:first-child {
     font-size: 5rem;
     text-shadow: 1px 1px #000;
     color: rgb(56, 157, 69);
-    font-family: cursive;
+    font-family:  cursive !important;
+
   }
   
   .TextSpan:hover::first-letter {

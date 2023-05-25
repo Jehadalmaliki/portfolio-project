@@ -8,7 +8,7 @@
   align-items: center;
   height: auto; /* Change height to auto for responsiveness */
   font-family: 'Courier New', Courier, monospace;
- margin-inline: 3rem;
+  margin-inline: 3rem;
 }
 
 .sentence-container span {

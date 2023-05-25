@@ -7,7 +7,7 @@ const Cube = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        height: "10vh",
+        height: "6vh",
         paddingRight: "2px",
       }}
     >

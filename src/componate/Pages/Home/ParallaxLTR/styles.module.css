@@ -12,7 +12,7 @@
 }
 
 .text {
-  color: rgb(70, 234, 37);
+  color: rgb(66, 165, 46);
   font-weight: 700;
   font-size: 1.3rem;
   margin: 15rem 3rem;
@@ -22,13 +22,17 @@
   line-height: 0px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
+  background-color: #031c07;
+  border-top: 1px solid #43ee61;
+  border-right: 1px solid #43ee61;
+  border-radius: 6px;
   
 } 
 
 .text a{
-
+  font-size: 1.1rem;
   margin: 1rem 0.5rem;
-  color: rgb(20, 43, 23);
+  color: rgb(70, 234, 37);
 }
 .number span {
   display: inline-block;
@@ -48,3 +52,4 @@
   padding:3px;
   height: 100%
 }
+/* For WebKit-based browsers */

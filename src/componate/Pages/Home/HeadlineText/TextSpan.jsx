@@ -28,6 +28,7 @@ export default function TextSpan({ childern }) {
     return (
    
         <motion.span className='TextSpan'
+
             animate={controls}
             onMouseOver={() => {
                 if (!isPlaying)
@@ -37,6 +38,7 @@ export default function TextSpan({ childern }) {
             style={{   
                 textShadow: "1px 1px #000",
                   transformStyle: "preserve-3d",
+                
                 }}
             
         >
