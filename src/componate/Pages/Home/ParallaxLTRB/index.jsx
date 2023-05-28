@@ -163,7 +163,7 @@ const ReactspringB = () => {
           <dev className={styles.text}>
               <p>Therapist project</p> |
               <a
-                href="https://therapistidev.netlify.app/"
+                href="https://idev-therapist.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
